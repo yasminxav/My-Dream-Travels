@@ -1,2 +1,94 @@
 @import 'https://fonts.googleapis.com/css?family=Dancing+Script:300,400';
+/*Mobile*/
+@media screen and (min-width: 360px) {
+html {
+    font-size:10px;
+    min-width: 360px;
+}
+body {
+    margin:0;
+    background-image: linear-gradient(170deg, #ffffff 1%, #5f4d93);
+}
+div.wrapper {
+    padding: 0;
+}
 
+
+/*header*/
+header.title {
+    width: 20em;
+    height: 8em;
+    padding: 3em 1em 1em 1em;
+    text-align: center;
+}
+header.title h1{
+    font-family:'Dancing Script', cursive;
+    margin-bottom: 0.3em;
+}
+header.title p{
+    font-family: 'Courier New', Courier, monospace;
+}
+.title a {
+    text-decoration: none;
+    color: grey;
+}
+
+.title{
+    font-size: 1.5em;
+}
+
+
+/*header*/
+nav ul{
+    list-style: none;
+    font-size: 1.4em;
+    margin: 0.5em 0.5em 2em;
+    padding-right: 3em;
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+}
+nav ul li {
+    display: inline-block;
+    padding: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+nav a{
+    text-decoration: none;
+    color: grey;
+    
+}
+nav ul li:hover {
+    background-color: white;
+    transition-duration: 0.4s;
+}
+
+
+/*Main*/
+.boxes-container ul {
+
+    list-style: none;
+    padding:0;
+}
+.boxes-container ul li img {
+    width: 20em;
+    height: 20em;
+    border-radius: 100%;
+    padding: 1em;
+}
+.boxes-container ul li {
+    text-align: center;
+    margin-bottom: 10em;
+}
+
+/*footer*/
+footer ul{
+    font-size: 2em;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    height: 2em;
+    display: inline-block
+}
+}
