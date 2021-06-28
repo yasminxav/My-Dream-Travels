@@ -1,20 +1,20 @@
 @import 'https://fonts.googleapis.com/css?family=Dancing+Script:300,400';
 
-
     html {
-        font-size:10px;
-        min-width: 360px;
+    font-size:10px;
+    width: 100%;
     }
     body {
         margin:0;
         background-image: linear-gradient(170deg, #ffffff 1%, #5f4d93);
+        height: 100%;
+        width: 100%;
     }
     div.wrapper {
-        padding: 0;
         height: 100%;
-        width: 96%;
-        margin-left: 3em;
-        margin-right: 3em ;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 4em;
     }
 
 
@@ -71,10 +71,13 @@
     
 
 
-    /*Main*/
+    /*Nav países*/
     .boxes-container ul {
         list-style: none;
         padding:0;
+    }
+    .boxes-container{
+        padding-bottom: 2em;
     }
     .boxes-container ul li img {
         width: 20em;
@@ -87,6 +90,86 @@
         text-align: center;
         margin-bottom: 10em;
     }
+    .boxes-container img{
+        opacity: 0.5;
+    }
+    .boxes-container img:hover{
+        opacity: 1;
+        width: 21em;
+        height: 21em;
+        transition-duration: 0.7s;
+        background-color: white;
+    }
+
+
+
+    /*Descrição países*/
+    div#escondido {
+        background-color: white;
+        display: none; 
+        border-radius: 8px;
+    }
+    div#escondido2 {
+        display: none;
+    }
+    div#escondido3 {
+        display: none;
+    }
+    div#escondido4 {
+        display: none;
+    }
+    div#escondido5 {
+        display: none;
+    }
+    section{
+        background-color: white;
+        padding: 7em;
+        border-radius: 8px;
+        color: grey;
+      
+      
+    }
+    section header{
+        font-size: 1.5em;
+    }
+    section header h2{
+        margin: 0.5em;
+    }
+    section header h2:after {
+        content: "";
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+        height: 2px;
+        display: block;
+        background-color: rgb(219, 219, 219);
+        margin-right: 5em;
+    }
+    div.section1{
+        display: flex;
+    }
+    div.cont{
+        flex: 1;
+    }
+    div.row{
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+      
+    }
+    .row img{
+        width: 35em;
+        height: 20em;
+        border-radius: 8px;
+        
+    }
+    
+p .pl:hover{
+    color: black;
+
+}
+
 
     /*footer*/
     footer ul{
@@ -122,10 +205,64 @@
         border: 1px solid rgb(216, 216, 216);
         border-radius: 100%;
         line-height: 1em;
-}
+    }
+    footer a:hover {
+        background-color: white;
+        color: black;
+        transition-duration: 1s;
+    }
 
+    div.nav {
+        display:none;
+    }
+    
+    @media screen and (max-width: 360px){
+        .row img{
+            width: 20em;
+            height: 20em;
+            border-radius: 8px;
+            
+        }
+        section {
+            padding: 2em;
+            height: 160em;
+        }
+        div.section1{
+        flex-direction: column;
+        }
+        p.pl{
+            margin: 1em;
+            font-size: 1em;
+            line-height: 2em;
+        }
+        div.section1 p{
+            font-size: 2em;
+        }
+        .cont p{
+            margin-bottom: 4em;
+        }
+
+    }
 /*Pc*/
 @media screen and (min-width: 640px) {
+    div.wrapper {
+        padding: 0;
+        height: 100%;
+        width: 96%;
+        margin-left: 3em;
+        margin-right: 2em ;
+    }
+    html {
+        font-size:10px;
+        width: 100%;
+        }
+    div.ocupadora-de-espaço{
+        height: 34em;
+    }
+
+
+/*header*/
+
 nav{
     display:none;
 }
@@ -139,8 +276,64 @@ div.logo{
     width: 20em;
     margin:0;
 }
+div.header{
+    height: 12em;
+   
+}
+div.nav{
+    width: 18em;
+    background-color: rgb(233, 233, 233);
+    display: block;
+}
+div.nav a{
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 2em;
+    height: 4em;
+    border-radius: 8px;
+}
+div.nav a:hover{
+    background-color: white;
+    transition-duration: 0.4s;
+}
+/*main*/
+.boxes-container ul{
+    display: flex;
+}
+.boxes-container ul li {
+    width: 30em;
+    margin:0;
+}
+.boxes-container{
+    padding: 1em 5em 6em 9em;
+}
+footer ul {
+    border: 0px;
+}
+/*Content paises*/
+section p{
+    font-size: 1.7em;
+    width: 30em;
+    line-height: 1.5em;
+}
 
 }
+/*Animações*/
+@keyframes aparecer {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.boxes-container li, h1 {
+    animation-name: aparecer;
+    animation-duration: 3s;
+}
+div header h2 {
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+
+
 
 
 
