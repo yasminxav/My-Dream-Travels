@@ -1,0 +1,135 @@
+@import 'https://fonts.googleapis.com/css?family=Dancing+Script:300,400';
+
+
+
+html{
+    font-size: 10px;
+}
+body{
+    background-image: linear-gradient(170deg, #ffffff 1%, #5f4d93);
+}
+
+
+/*header*/
+
+header{
+    padding: 5em 3em 2em 4em;
+    display: flex;
+    text-decoration: none;
+}
+div.nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color:grey;
+}
+div.nav ul li:hover{
+    background-color: white;
+    transition-duration: 0.4s;
+}
+div.nav{
+    width: 10em;
+}
+div.nav li{
+    border-radius: 8px;
+}
+div.nav ul{
+    list-style: none;
+    padding: 0.7em;
+    margin:0;
+    background-color: rgb(223, 223, 223);
+    border-radius: 8px;
+}
+div.title{
+    width: 20em;
+}
+div.title a {
+    padding-left: 1em;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+}
+div.title h1{
+    font-family: 'Dancing Script';
+    font-size: 3em;
+}
+
+/*main*/
+div.main{
+    padding: 6em;
+    border-radius: 8px;
+}
+section ul li{
+    list-style: none;
+    padding: 0;
+    padding-bottom:5em;
+    height: 3em;
+    text-align:center
+}
+section ul li:hover{
+    background-color: rgb(219, 219, 219);
+    transition-duration: 1s;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+section ul li h2{
+    border-radius: 8px;
+    background-color: white;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em; 
+}
+section ul li a{
+    font-size: 1.4em;
+    margin: 0.6em;
+    text-decoration: none;
+    color:indigo;
+}
+section ul li span{
+    margin-right: 1.5em;
+    font-size: 1.4em;
+}
+
+@media screen and (max-width: 360px){
+    div.main{
+        padding: 2em
+    }
+}
+section ul{
+    list-style: none;
+    padding:0;
+    margin-bottom: 11em;
+}
+@media screen and (max-width: 360px){
+    section ul{
+        margin-bottom: 6em; 
+    }
+}
+
+/*footer*/
+footer ul li{
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+}
+footer ul{
+    text-align: center;
+    padding:0;
+    font-size: 2em;
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5em
+}
+
+@keyframes aparecer {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+h1 {
+    animation-name: aparecer;
+    animation-duration: 3s;
+}
+
+
